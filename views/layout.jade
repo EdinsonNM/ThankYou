@@ -2,6 +2,9 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    script(src='/js/libs/require/require.js',data-main="js/config")
+    script(src='/js/libs/bootstrap/bootstrap.min.js')
   body
     block content

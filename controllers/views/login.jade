@@ -1,0 +1,17 @@
+extends ../../views/layout
+ 
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+      form(action='/login',method='post')
+        div
+          fieldset(data-role='controlgroup')
+           label(for='email') email
+           input(id='email',type='text',value='',placeholder='@')
+        div
+          fieldset(data-role='controlgroup')
+           label(for='password') password
+           input(id='password',type='password',value='',placeholder='')
+        div  
+          input(type='submit',value='Sign Up')  
